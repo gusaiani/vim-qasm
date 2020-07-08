@@ -8,10 +8,16 @@ if exists("b:current_syntax")
 endif
 
 " Basic tokens
-syntax keyword qasmDebugger debugger
-syntax match qasmSemicolon +;+
+syntax match qSemicolon +;+
+
+" Comment tokens
+syntax keyword qCommentTodo contained TODO FIXME XXX TBD
+syntax region  qComment start=+//+ end=/$/ contains=qCommentTodo,@Spell extend keepend
 
 " Basics
-highlight default link qasmDebugger Keyword
+
+" Comments
+highlight default link qComment Comment
+highlight default link qCommentTodo Todo
 
 let b:current_syntax = "qasm"

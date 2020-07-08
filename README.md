@@ -14,6 +14,6 @@ au BufRead,BufNewFile *.qasm set filetype=qasm
 
 ## Next Steps
 
-Fill out the syntax highlighting cases.
+Fill out all syntax highlighting cases.
 
-Make this an installable vim package.
+Make this an installable vim plugin.
