@@ -12,17 +12,21 @@ syntax match qSemicolon +;+
 syntax match qNumber /\c\<\%(\d\+\%(e[+-]\=\d\+\)\=\|0b[01]\+\|0o\o\+\|0x\x\+\)\>/
 
 " Built-in functions
-syntax keyword qKeyword q x cx ccx measure
+syntax keyword qKeyword ccx creg cx h include measure qreg x
 
 " Comment tokens
 syntax keyword qCommentTodo contained TODO FIXME XXX TBD
 syntax region  qComment start=+//+ end=/$/ contains=qCommentTodo,@Spell extend keepend
+
+" Protocol token
+syntax region  qOpen start=+OPENQASM+ end=/$/  extend keepend
 
 " Basics
 
 " Comments
 highlight default link qComment Comment
 highlight default link qCommentTodo Todo
+highlight default link qOpen Comment
 
 " Function
 highlight default link qKeyword Function
