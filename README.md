@@ -1,6 +1,8 @@
-# VIM QASM Syntax Highlight
+# VIM OpenQASM Syntax Highlight
 
-Everyone is welcome to contribute, please submit your pull requests.
+OpenQASM is Open Quantum Assembly Language.
+
+It is currently used in IBM’s quantum computers. Try one now: https://quantum-computing.ibm.com/login
 
 ## Install
 
