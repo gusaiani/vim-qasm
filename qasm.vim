@@ -12,7 +12,7 @@ syntax match qSemicolon +;+
 syntax match qNumber /\c\<\%(\d\+\%(e[+-]\=\d\+\)\=\|0b[01]\+\|0o\o\+\|0x\x\+\)\>/
 
 " Built-in functions
-syntax keyword qKeyword ccx creg cx h include measure qreg x
+syntax keyword qKeyword ccx creg cx cz h include measure qreg x
 
 " Comment tokens
 syntax keyword qCommentTodo contained TODO FIXME XXX TBD
